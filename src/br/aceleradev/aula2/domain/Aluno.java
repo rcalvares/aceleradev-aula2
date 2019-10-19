@@ -1,5 +1,12 @@
 package br.aceleradev.aula2.domain;
 
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+
 public class Aluno extends Usuario{
 
     private Integer numeroMatricula;
@@ -12,7 +19,8 @@ public class Aluno extends Usuario{
         this.numeroMatricula = numeroMatricula;
     }
 
-    public Aluno(String nome, String login, String cpf) {
-        super(nome, login, cpf);
+    public Aluno(String nome, String login, String cpf, LocalDate dataNascimento) {
+        super(nome, login, cpf, dataNascimento);
     }
+
 }

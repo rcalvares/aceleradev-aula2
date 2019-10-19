@@ -2,6 +2,11 @@ package br.aceleradev.aula2.domain;
 
 import br.aceleradev.aula2.exceptions.LoginInvalidoException;
 
+import java.time.LocalDate;
+import java.time.Period;
+import java.util.ArrayList;
+import java.util.List;
+
 import static br.aceleradev.aula2.utils.MensagemException.LOGIN_MENOR_DE_TRES_CARACTERES;
 
 public class Usuario {
@@ -9,12 +14,23 @@ public class Usuario {
     private String nome;
     private String login;
     private String cpf;
+    private LocalDate dataNascimento;
 
-    public Usuario(String nome, String login, String cpf) {
+
+    public Usuario(String nome, String login, String cpf, LocalDate dataNascimento) {
         this.nome = nome;
         setLogin(login);
         this.cpf = cpf;
+        this.dataNascimento = dataNascimento;
 
+    }
+
+    public LocalDate getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(LocalDate dataNascimento) {
+        this.dataNascimento = dataNascimento;
     }
 
     public String getLogin() {
@@ -54,6 +70,5 @@ public class Usuario {
                 + "\nlogin: " + this.login
                 + "\ncpf: " + this.cpf;
     }
-
 
 }
