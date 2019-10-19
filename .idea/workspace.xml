@@ -2,24 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b9aa5b4-229d-4a2b-ad77-5e2720d6fcde" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/aceleradev/aula2/domain/TiposDisciplina.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/aceleradev/aula2/repositories/DisciplinaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/aceleradev/aula2/main/exceptions/AlunoExistenteException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/aula-2/br/aceleradev/aula2/domain/Aluno.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/aula-2/br/aceleradev/aula2/domain/Aluno.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/aula-2/br/aceleradev/aula2/domain/Disciplina.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/aula-2/br/aceleradev/aula2/domain/Disciplina.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/aula-2/br/aceleradev/aula2/domain/Professor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/aula-2/br/aceleradev/aula2/domain/Professor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/aula-2/br/aceleradev/aula2/domain/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/aula-2/br/aceleradev/aula2/domain/Usuario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/aula-2/br/aceleradev/aula2/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/aula-2/br/aceleradev/aula2/main/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/aula-2/br/aceleradev/aula2/main/Main.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/aula-2/br/aceleradev/aula2/main/MainSistema.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/aula-2/br/aceleradev/aula2/main/MainSistema.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/aula-2/br/aceleradev/aula2/repositories/UsuarioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/aula-2/br/aceleradev/aula2/repositories/UsuarioRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/aula-2/br/aceleradev/aula2/repositories/DisciplinaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/aula-2/br/aceleradev/aula2/repositories/DisciplinaRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/aceleradev/aula2/domain/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/aceleradev/aula2/domain/Aluno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/aceleradev/aula2/domain/Disciplina.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/aceleradev/aula2/domain/Disciplina.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/aceleradev/aula2/domain/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/aceleradev/aula2/domain/Professor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/aceleradev/aula2/domain/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/aceleradev/aula2/domain/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/aceleradev/aula2/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/aceleradev/aula2/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/aceleradev/aula2/main/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/aceleradev/aula2/main/MainSistema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/aceleradev/aula2/main/MainSistema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/aceleradev/aula2/repositories/DisciplinaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/aceleradev/aula2/repositories/DisciplinaRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/aceleradev/aula2/repositories/UsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/aceleradev/aula2/repositories/UsuarioRepository.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,6 +33,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1SQHz4G372fZOGQ19M66OS5WlNL" />
@@ -109,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1571489158098</updated>
       <workItem from="1571489161387" duration="7102000" />
-      <workItem from="1571502879716" duration="8168000" />
+      <workItem from="1571502879716" duration="14288000" />
     </task>
     <servers />
   </component>

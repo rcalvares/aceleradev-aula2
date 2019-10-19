@@ -5,11 +5,17 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class Aluno extends Usuario{
 
     private Integer numeroMatricula;
+
+
+    public Aluno(String nome, String login, String cpf, LocalDate dataNascimento) {
+        super(nome, login, cpf, dataNascimento);
+    }
 
     public Integer getNumeroMatricula() {
         return numeroMatricula;
@@ -19,8 +25,12 @@ public class Aluno extends Usuario{
         this.numeroMatricula = numeroMatricula;
     }
 
-    public Aluno(String nome, String login, String cpf, LocalDate dataNascimento) {
-        super(nome, login, cpf, dataNascimento);
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Aluno aluno = (Aluno) o;
+        return this.getNome().equals(aluno.getNome());
     }
 
 }

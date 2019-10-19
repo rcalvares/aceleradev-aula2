@@ -2,11 +2,15 @@ package br.aceleradev.aula2.repositories;
 
 import br.aceleradev.aula2.domain.Aluno;
 import br.aceleradev.aula2.domain.Disciplina;
+import br.aceleradev.aula2.domain.Professor;
 import br.aceleradev.aula2.domain.TiposDisciplina;
 import br.aceleradev.aula2.exceptions.NumeroMaximoAlunosException;
+import br.aceleradev.aula2.main.exceptions.AlunoExistenteException;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import static br.aceleradev.aula2.domain.TiposDisciplina.*;
 
@@ -34,10 +38,14 @@ public class DisciplinaRepository {
 
     }
 
-//    public void matricularAluno(Aluno aluno, TiposDisciplina tipoDisciplina){
-//
-//        disciplinas.stream().filter()
-//
-//    }
+
+    public int verificarNumeroAlunosPorProfessor(Professor p) {
+
+        return disciplinas.stream()
+                .filter(disciplina -> disciplina.verificaProfessor(p))
+                .mapToInt(disciplina -> disciplina.retornaQuantidadeAlunos())
+                .sum();
+
+    }
 
 }

@@ -1,6 +1,7 @@
 package br.aceleradev.aula2.domain;
 
 import br.aceleradev.aula2.exceptions.NumeroMaximoAlunosException;
+import br.aceleradev.aula2.main.exceptions.AlunoExistenteException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,4 +60,23 @@ public class Disciplina {
         return this.tipoDisciplina.equals(tipoDisciplina);
     }
 
+    public void matricularAluno(Aluno aluno){
+
+
+        if (this.alunos.size() > 10) throw new NumeroMaximoAlunosException("Lotada");
+        if (this.alunos.contains(aluno)) throw new AlunoExistenteException("Aluno já matriculado");
+
+        alunos.add(aluno);
+
+    }
+
+    public boolean verificaProfessor(Professor professor){
+        return this.professor.equals(professor);
+    }
+
+    public int retornaQuantidadeAlunos() {
+        return this.alunos.size();
+    }
 }
+
+
